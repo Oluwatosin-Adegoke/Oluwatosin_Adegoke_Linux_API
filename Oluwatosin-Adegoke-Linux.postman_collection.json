@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "4c41b0de-a631-4c7f-ae1e-abd2c24f500e",
+		"name": "Oluwatosin-Adegoke-Linux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register  new user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e44fd6ac-29ca-49dc-b2e1-4b13fe2782d6",
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});\r",
+							"pm.test(\"Status code name has OK string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"postman.setEnvironmentVariable(\"header_server\", pm.response.headers.get('server'));\r",
+							"\r",
+							"pm.environment.set(\"letter_server\", pm.response.headers.get('server'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"email\": \"eve.holt@reqres.in\",\r\n      \"password\": \"pistol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/register",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "https://reqres.in/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete blog post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70f82b61-efda-4241-95f1-266fc632263d",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"No Content\");\r",
+							"});\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get blog post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "00990dd3-ac82-44e8-be9f-881dad14afdb",
+						"exec": [
+							"// Test 1 status code is 200 OK\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"// Test 2 confirm code string is 200 OK\r",
+							"pm.test(\"Status code name has OK string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://docs.postman-echo.com",
+					"protocol": "https",
+					"host": [
+						"docs",
+						"postman-echo",
+						"com"
+					]
+				},
+				"description": "https://docs.postman-echo.com"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user record ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users2\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/users2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b28d4283-1a4c-421b-8de3-c58c3fb52fa8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code name has OK string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.fusio-project.org/index.php/todo/?todo_id=2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"fusio-project",
+						"org"
+					],
+					"path": [
+						"index.php",
+						"todo",
+						""
+					],
+					"query": [
+						{
+							"key": "todo_id",
+							"value": "2\n\n\n"
+						}
+					]
+				},
+				"description": "https://demo.fusio-project.org/index.php/todo/?todo_id=2"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new record in data base",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ea99bc9b-ad5b-4d2a-920d-4ca1a2bfd8e8",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Created\");\r",
+							"});\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/user\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"user\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a user record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "17f7c3e7-73ce-4482-b339-edc086a3d33b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code name has OK string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/user/2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"user",
+						"2\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/user/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all to do entries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a4f536a5-5ec6-4a89-8d62-b5b57ab8823d",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.fusio-project.org/index.php/todo\n\n\n",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"fusio-project",
+						"org"
+					],
+					"path": [
+						"index.php",
+						"todo\n\n\n"
+					]
+				},
+				"description": "https://demo.fusio-project.org/index.php/todo"
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fddfffdd-6d40-4958-83b7-b40917997115",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Created\");\r",
+							"});\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/users\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7819e10b-9d91-4186-8a31-4eed184112ac",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Created\");\r",
+							"});\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"cityslicka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/login\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"login\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		},
+		{
+			"name": "List user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users?page=2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2\n\n\n"
+						}
+					]
+				},
+				"description": "https://reqres.in/api/users?page=2"
+			},
+			"response": []
+		},
+		{
+			"name": "List single user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/2\n\n\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2\n\n\n"
+					]
+				},
+				"description": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,439 @@
+{
+	"id": "b707d8dd-633f-40fe-b167-980908614a99",
+	"name": "Oluwatosin-Adegoke-Linux",
+	"timestamp": "2020-11-24T16:01:05.036Z",
+	"collection_id": "4c41b0de-a631-4c7f-ae1e-abd2c24f500e",
+	"folder_id": 0,
+	"environment_id": "da823c66-d5b3-43ad-b4fc-45c9b2600d7d",
+	"totalPass": 18,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "fbafb1a9-dc2d-4287-ae0c-58c6d5e7eaf4",
+			"name": "Register  new user",
+			"url": "https://reqres.in/api/register",
+			"time": 758,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				758
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "70149327-f10c-48c8-812e-48429bc95b8d",
+			"name": "Delete blog post",
+			"url": "https://reqres.in/api/users/2%0A%0A%0A",
+			"time": 254,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				254
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "aa9d88f0-a71d-4925-95fe-cb1ac26eab43",
+			"name": "Get blog post",
+			"url": "https://docs.postman-echo.com/",
+			"time": 1699,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1699
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "f60e5012-f0cf-4821-95b0-83fed824ea5d",
+			"name": "Delete a user record ",
+			"url": "https://reqres.in/api/users2%0A%0A%0A",
+			"time": 306,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				306
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "91c3cbaf-222b-4f21-82b2-eda8ac3eb9be",
+			"name": "Get a single data",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2%0A%0A%0A",
+			"time": 910,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				910
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "9658e6f9-a54e-4c01-8cbb-320613ce1ea9",
+			"name": "Create new record in data base",
+			"url": "https://reqres.in/api/user%0A%0A%0A",
+			"time": 271,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				271
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "cd4caceb-08cf-4048-871e-aecd3c5a3d79",
+			"name": "Update a user record",
+			"url": "https://reqres.in/api/user/2%0A%0A%0A",
+			"time": 268,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				268
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "b9f27e21-4642-48b3-9040-40e0249903de",
+			"name": "Get all to do entries",
+			"url": "https://demo.fusio-project.org/index.php/todo%0A%0A%0A",
+			"time": 366,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				366
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "cbb43e1f-24a1-4510-a47d-861642d521d7",
+			"name": "Create user",
+			"url": "https://reqres.in/api/users%0A%0A%0A",
+			"time": 231,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				231
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "df8650cb-423c-4994-922c-7cefaa6f6c00",
+			"name": "User login",
+			"url": "https://reqres.in/api/login%0A%0A",
+			"time": 219,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "f2ff2a52-b866-4569-b1bd-f236e4b36876",
+			"name": "Delete user",
+			"url": "https://reqres.in/api/users/2%0A%0A%0A",
+			"time": 318,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				318
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4677869a-e583-4944-8dbf-598f8a0d2775",
+			"name": "List user",
+			"url": "https://reqres.in/api/users?page=2%0A%0A%0A",
+			"time": 216,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				216
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0df6029f-6b14-4cd9-bbf0-bbf11e9e4df0",
+			"name": "List single user",
+			"url": "https://reqres.in/api/users/2%0A%0A%0A",
+			"time": 205,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				205
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6021,
+	"collection": {
+		"requests": [
+			{
+				"id": "fbafb1a9-dc2d-4287-ae0c-58c6d5e7eaf4",
+				"method": "POST"
+			},
+			{
+				"id": "70149327-f10c-48c8-812e-48429bc95b8d",
+				"method": "DELETE"
+			},
+			{
+				"id": "aa9d88f0-a71d-4925-95fe-cb1ac26eab43",
+				"method": "GET"
+			},
+			{
+				"id": "f60e5012-f0cf-4821-95b0-83fed824ea5d",
+				"method": "DELETE"
+			},
+			{
+				"id": "91c3cbaf-222b-4f21-82b2-eda8ac3eb9be",
+				"method": "GET"
+			},
+			{
+				"id": "9658e6f9-a54e-4c01-8cbb-320613ce1ea9",
+				"method": "POST"
+			},
+			{
+				"id": "cd4caceb-08cf-4048-871e-aecd3c5a3d79",
+				"method": "PUT"
+			},
+			{
+				"id": "b9f27e21-4642-48b3-9040-40e0249903de",
+				"method": "GET"
+			},
+			{
+				"id": "cbb43e1f-24a1-4510-a47d-861642d521d7",
+				"method": "POST"
+			},
+			{
+				"id": "df8650cb-423c-4994-922c-7cefaa6f6c00",
+				"method": "POST"
+			},
+			{
+				"id": "f2ff2a52-b866-4569-b1bd-f236e4b36876",
+				"method": "DELETE"
+			},
+			{
+				"id": "4677869a-e583-4944-8dbf-598f8a0d2775",
+				"method": "GET"
+			},
+			{
+				"id": "0df6029f-6b14-4cd9-bbf0-bbf11e9e4df0",
+				"method": "GET"
+			}
+		]
+	}
+}
